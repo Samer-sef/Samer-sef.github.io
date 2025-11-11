@@ -17,271 +17,327 @@
     <link rel="stylesheet" href="styles.css" />
     <title>Samer Sefrani</title>
   </head>
-  <body class="light" id="top">
-    <header class="header center">
-      <h3>
-        <a href="_" class="link"
-          >SS.</a
-        >
-      </h3>
 
+  <body class="light" id="top">
+    <!-- ===== HEADER ===== -->
+    <header class="header center">
+      <h3><a href="#" class="link">SS.</a></h3>
       <nav class="nav center">
         <ul class="nav__list center">
-          <li class="nav__list-item">
-            <a class="link link--nav" href="#projects">Projects</a>
-          </li>
-          <li class="nav__list-item">
-            <a class="link link--nav" href="#skills">Skills</a>
-          </li>
-          <li class="nav__list-item">
-            <a class="link link--nav" href="#hobbies">Hobbies</a>
-          </li>
-          <li class="nav__list-item">
-            <a class="link link--nav" href="#contact">Contact</a>
-          </li>
+          <li class="nav__list-item"><a class="link link--nav" href="#projects">Projects</a></li>
+          <li class="nav__list-item"><a class="link link--nav" href="#skills">Skills</a></li>
+          <li class="nav__list-item"><a class="link link--nav" href="#experience">Experience</a></li>
+          <li class="nav__list-item"><a class="link link--nav" href="#hobbies">Hobbies</a></li>
+          <li class="nav__list-item"><a class="link link--nav" href="#contact">Contact</a></li>
         </ul>
 
         <button type="button" aria-label="toggle theme" class="btn btn--icon">
           <i aria-hidden="true" id="btn-theme" class="fas fa-moon"></i>
         </button>
-
-        <button
-          type="button"
-          aria-label="toggle navigation"
-          class="btn btn--icon nav__hamburger"
-        >
-          <i aria-hidden="true" class="fas fa-bars"></i>
-        </button>
       </nav>
     </header>
 
+    <!-- ===== MAIN ===== -->
     <main>
-      <!-- About -->
-      <div class="about center">
+      <!-- ===== ABOUT ===== -->
+      <section class="about center">
         <h1>Hi, I am <span class="about__name">Samer Sefrani.</span></h1>
-        <h2 class="about__role">Passionate software engineer.</h2>
-        <p class="about__desc">
-          I have always been passionate about creating solutions that make a positive difference 
-          and impact in the community. 
-          I enjoy solving problems using efficient solutions and I always seek and thrive on new challenges. 
-        </p>
+        <h2 class="about__role">check out my Software Developer experience below!</h2>
 
         <div class="about__contact center">
           <a href="https://drive.google.com/file/d/1elVJD8_IuGAsGjSqm6pOY2dvCNUukiFG/view?usp=sharing" target="_blank">
             <span class="btn btn--outline">Resume</span>
           </a>
 
-          <a
-            href="https://www.instagram.com/samer_sefrani/"
-            aria-label="instagram"
-            class="link link--icon"
-            target="_blank"
-          >
+          <a href="https://www.instagram.com/samer_sefrani/" target="_blank" class="link link--icon">
             <i aria-hidden="true" class="fab fa-instagram"></i>
           </a>
 
+          <a href="https://www.linkedin.com/in/samer-sefrani-b39a7869/" target="_blank" class="link link--icon">
+            <i aria-hidden="true" class="fab fa-linkedin"></i>
+          </a>
+        </div>
+      </section>
+
+      <!-- ===== EXPERIENCE / TIMELINE ===== -->
+      <section id="experience" class="section">
+        <h2 class="section__title">Work Experience</h2>
+
+        <ul class="timeline">
+          <!-- 1️⃣ PHSA -->
+          <li class="timeline-item">
+            <div class="timeline-dot"></div>
+            <div class="timeline-content">
+              <span class="timeline-date">06/2024 – Present</span>
+              <h3 class="timeline-title">PHSA – Genome Sciences Centre (Software Developer)</h3>
+              <p class="timeline-location">Vancouver, BC</p>
+              <img src="images/phsa.png" alt="PHSA logo" class="timeline-image" />
+              <!-- <div class="timeline-description">
+                <ul>
+                  <li>Resolved 120+ Jira tickets, improving system performance and reliability.</li>
+                  <li>Optimized invoice processing, reducing time by 70%.</li>
+                  <li>Fixed CI/CD issues, increasing build success rates by 90%.</li>
+                  <li>Implemented cost-sharing and automated accrual features.</li>
+                </ul>
+              </div> -->
+            </div>
+          </li>
+
+          <!-- 2️⃣ CJSF-FM -->
+          <li class="timeline-item">
+            <div class="timeline-dot"></div>
+            <div class="timeline-content">
+              <span class="timeline-date">06/2023 – 05/2024</span>
+              <h3 class="timeline-title">CJSF-FM SFU Radio (Mobile Developer)</h3>
+              <p class="timeline-location">Burnaby, BC</p>
+              <img src="images/sfu.jpg" alt="CJSF Radio logo" class="timeline-image" />
+              <!-- <div class="timeline-description">
+                <ul>
+                  <li>Built cross-platform mobile app using React Native.</li>
+                  <li>Drove 40% increase in downloads through new features.</li>
+                  <li>Boosted user engagement by 35% via live streaming and notifications.</li>
+                  <li>Led and mentored a small development team.</li>
+                </ul>
+              </div> -->
+            </div>
+          </li>
+
+          <!-- 3️⃣ Sony Pictures Imageworks -->
+          <li class="timeline-item">
+            <div class="timeline-dot"></div>
+            <div class="timeline-content">
+              <span class="timeline-date">09/2022 – 05/2023</span>
+              <h3 class="timeline-title">Sony Pictures (Software Engineer Intern)</h3>
+              <p class="timeline-location">Vancouver, BC</p>
+              <img src="images/sony.webp" alt="Sony Pictures Imageworks logo" class="timeline-image" />
+              <!-- <div class="timeline-description">
+                <ul>
+                  <li>Enhanced OpenCue rendering farm using Java and PyQt.</li>
+                  <li>Developed multi-threaded chatbot using Python microservices.</li>
+                  <li>Received Sony Imageworks Innovation Award.</li>
+                  <li>Worked with Docker, Pub/Sub, CI/CD, and DialogFlow.</li>
+                </ul>
+              </div> -->
+            </div>
+          </li>
+
+          <!-- 4️⃣ Prompt Health -->
+          <li class="timeline-item">
+            <div class="timeline-dot"></div>
+            <div class="timeline-content">
+              <span class="timeline-date">01/2021 – 08/2021</span>
+              <h3 class="timeline-title">Prompt Health (Software Developer)</h3>
+              <p class="timeline-location">Vancouver, BC</p>
+              <img src="images/prompt.jpg" alt="Prompt Health logo" class="timeline-image" />
+              <!-- <div class="timeline-description">
+                <ul>
+                  <li>Integrated AWS S3, reducing server storage by 24%.</li>
+                  <li>Automated user migration, saving 4 weeks of manual work.</li>
+                  <li>Built React Native app with Redux and authentication.</li>
+                  <li>Fixed critical Stripe and MailChimp bugs.</li>
+                </ul>
+              </div> -->
+            </div>
+          </li>
+
+          <!-- 5️⃣ Porton Health -->
+          <li class="timeline-item">
+            <div class="timeline-dot"></div>
+            <div class="timeline-content">
+              <span class="timeline-date">09/2020 – 12/2020</span>
+              <h3 class="timeline-title">Porton Health (Full-stack Developer Co-op)</h3>
+              <p class="timeline-location">Vancouver, BC</p>
+              <img src="images/porton.png" alt="Porton Health logo" class="timeline-image" />
+              <!-- <div class="timeline-description">
+                <ul>
+                  <li>Created reminder microservice with RESTful APIs.</li>
+                  <li>Implemented email, SMS, and voice notifications.</li>
+                  <li>Built CI/CD pipeline and monitored AWS deployments.</li>
+                  <li>Resolved NodeJS, React, and Bootstrap issues.</li>
+                </ul>
+              </div> -->
+            </div>
+          </li>
+        </ul>
+
+      </section>
+
+      <!-- ===== PROJECTS ===== -->
+      <section id="projects" class="section projects">
+        <h2 class="section__title">My Favourite Projects</h2>
+        <div class="projects__grid">
+        <!-- 1️⃣ University Confessions -->
+        <div class="project">
+          <h3>University Confessions (personal project)</h3>
+          <p class="project__description">
+            An anonymous confession web app for SFU students built with React and Firebase.
+          </p>
+          <ul class="project__stack">
+            <li class="project__stack-item">React</li>
+            <li class="project__stack-item">Firebase</li>
+            <li class="project__stack-item">Zustand</li>
+          </ul>
           <a
-            href="https://www.linkedin.com/in/samer-sefrani-b39a7869/"
-            aria-label="linkedin"
+            href="https://university-confessions-62498.web.app/"
+            aria-label="live preview"
             class="link link--icon"
             target="_blank"
           >
-            <i aria-hidden="true" class="fab fa-linkedin"></i>
+            <i aria-hidden="true" class="fas fa-external-link-alt"></i>
+          </a>
+        </div>
+
+        <!-- 2️⃣ sNotes -->
+        <div class="project">
+          <h3>sNotes (personal project)</h3>
+          <p class="project__description">
+            A Kotlin Android app for styled note-taking with quotes and favorites. Currently has 5000+ downloads on
+            Google Play!
+          </p>
+          <ul class="project__stack">
+            <li class="project__stack-item">Kotlin</li>
+            <li class="project__stack-item">RecyclerView</li>
+            <li class="project__stack-item">Volley</li>
+            <li class="project__stack-item">Quotes API</li>
+            <li class="project__stack-item">Admob</li>
+          </ul>
+          <a
+            href="https://play.google.com/store/apps/details?id=com.sNotes.sam"
+            aria-label="live preview"
+            class="link link--icon"
+            target="_blank"
+          >
+            <i aria-hidden="true" class="fas fa-external-link-alt"></i>
+          </a>
+        </div>
+
+        <!-- 3️⃣ I-Commander -->
+        <div class="project">
+          <h3>I-Commander (CMPT 276 – school project)</h3>
+          <p class="project__description">
+            A team-built drone management web app for Lorrnel using Node.js and Bootstrap.
+          </p>
+          <ul class="project__stack">
+            <li class="project__stack-item">Node.js</li>
+            <li class="project__stack-item">Bootstrap</li>
+            <li class="project__stack-item">jQuery</li>
+            <li class="project__stack-item">jQuery UI</li>
+          </ul>
+        </div>
+
+        <!-- 4️⃣ Solve It -->
+        <div class="project">
+          <h3>Solve It (personal project)</h3>
+          <p class="project__description">
+            An AI tool that extracts text from images and instantly answers related questions.
+          </p>
+          <ul class="project__stack">
+            <li class="project__stack-item">React</li>
+            <li class="project__stack-item">Firebase</li>
+            <li class="project__stack-item">OpenAI API</li>
+            <li class="project__stack-item">ImageToText API</li>
+          </ul>
+          <a
+            href="https://solveit-52482.web.app/"
+            aria-label="live preview"
+            class="link link--icon"
+            target="_blank"
+          >
+            <i aria-hidden="true" class="fas fa-external-link-alt"></i>
+          </a>
+        </div>
+
+        <!-- 5️⃣ Triplio -->
+        <div class="project">
+          <h3>triplio (personal project)</h3>
+          <p class="project__description">
+            A social platform for travelers to share trips and photos using AWS and React.
+          </p>
+          <ul class="project__stack">
+            <li class="project__stack-item">React</li>
+            <li class="project__stack-item">Node.js</li>
+            <li class="project__stack-item">Redux Toolkit</li>
+            <li class="project__stack-item">JWT</li>
+            <li class="project__stack-item">AWS S3</li>
+            <li class="project__stack-item">AWS EC2</li>
+            <li class="project__stack-item">AWS CloudFront</li>
+          </ul>
+          <a
+            href="https://trip-lio.com"
+            aria-label="live preview"
+            class="link link--icon"
+            target="_blank"
+          >
+            <i aria-hidden="true" class="fas fa-external-link-alt"></i>
           </a>
         </div>
       </div>
 
-      <!-- Projects -->
-      <section id="projects" class="section projects">
-        <h2 class="section__title">My Favourite Projects</h2>
-
-        <div class="projects__grid">
-          <div class="project">
-            <h3>University Confessions (personal project)</h3>
-            <p class="project__description">
-              A backendless web app that allows students of SFU to post their confessions about 
-              different topics and interact with other posts.
-            </p>
-            <ul class="project__stack">
-              <li class="project__stack-item">React</li>
-              <li class="project__stack-item">Firebase</li>
-              <li class="project__stack-item">Zustand</li>
-            </ul>
-
-            <a
-              href="https://university-confessions-62498.web.app/"
-              aria-label="live preview"
-              class="link link--icon"
-              target="_blank"
-            >
-              <i aria-hidden="true" class="fas fa-external-link-alt"></i>
-            </a>
-          </div>
-
-          <div class="project">
-            <h3>sNotes (personal project)</h3>
-            <p class="project__description">
-              An Android app helps users to take and style their notes and gives the option
-              to add them to the favorite. This was the first app I ever built and it curently has +5000 downloads!
-            </p>
-            <ul class="project__stack">
-              <li class="project__stack-item">Kotlin</li>
-              <li class="project__stack-item">RecyclerView</li>
-              <li class="project__stack-item">Volley</li>
-              <li class="project__stack-item">Quotes API</li>
-              <li class="project__stack-item">Admob</li>
-            </ul>
-
-            <a
-              href="https://play.google.com/store/apps/details?id=com.sNotes.sam"
-              aria-label="live preview"
-              class="link link--icon"
-              target="_blank"
-            >
-              <i aria-hidden="true" class="fas fa-external-link-alt"></i>
-            </a>
-          </div>
-
-          <div class="project">
-            <h3>I-commander (CMPT 276/school project)</h3>
-            <p class="project__description">
-              Drones Web-based App.
-              Worked in a group of five to develop a drone management application for Lorrnel company.
-            </p>
-            <ul class="project__stack">
-              <li class="project__stack-item">NodeJS</li>
-              <li class="project__stack-item">BootStrap</li>
-              <li class="project__stack-item">Jquery</li>
-              <li class="project__stack-item">JqueryUI</li>
-            </ul>
-          </div>
-
-          <div class="project">
-            <h3>Solve It (personal project)</h3>
-            <p class="project__description">
-              A single page web tool that gives an answer for the text written on any uploaded picture.
-            </p>
-            <ul class="project__stack">
-              <li class="project__stack-item">React</li>
-              <li class="project__stack-item">Firebase</li>
-              <li class="project__stack-item">OpenAi API</li>
-              <li class="project__stack-item">ImageToText API</li>
-            </ul>
-
-            <a
-              href="https://solveit-52482.web.app/"
-              aria-label="live preview"
-              class="link link--icon"
-              target="_blank"
-            >
-              <i aria-hidden="true" class="fas fa-external-link-alt"></i>
-            </a>
-          </div>
-
-          <div class="project">
-            <h3>triplio (personal project)</h3>
-            <p class="project__description">
-              A social media platform for trips.
-            </p>
-            <ul class="project__stack">
-              <li class="project__stack-item">React</li>
-              <li class="project__stack-item">NodeJs</li>
-              <li class="project__stack-item">Redux toolkit</li>
-              <li class="project__stack-item">JWT</li>
-              <li class="project__stack-item">AWS S3</li>
-              <li class="project__stack-item">AWS EC2</li>
-              <li class="project__stack-item">AWS Cloudfront</li>
-            </ul>
-
-            <a
-              href="Https://trip-lio.com"
-              aria-label="live preview"
-              class="link link--icon"
-              target="_blank"
-            >
-              <i aria-hidden="true" class="fas fa-external-link-alt"></i>
-            </a>
-          </div>
-
-        </div>
       </section>
 
-      <!-- Skills -->
-      <section class="section skills" id="skills">
+      <!-- ===== SKILLS ===== -->
+      <section id="skills" class="section skills">
         <h2 class="section__title">Skills</h2>
-       <ul class="skills__list">
-        <li class="skills__list-item btn btn--plain">Python</li>
-        <li class="skills__list-item btn btn--plain">JavaScript</li>
-        <li class="skills__list-item btn btn--plain">TypeScript</li>
-        <li class="skills__list-item btn btn--plain">Kotlin</li>
-        <li class="skills__list-item btn btn--plain">C</li>
-        <li class="skills__list-item btn btn--plain">SQL</li>
-        <li class="skills__list-item btn btn--plain">HTML</li>
-        <li class="skills__list-item btn btn--plain">CSS</li>
-        <li class="skills__list-item btn btn--plain">React</li>
-        <li class="skills__list-item btn btn--plain">Redux Toolkit</li>
-        <li class="skills__list-item btn btn--plain">React Native</li>
-        <li class="skills__list-item btn btn--plain">Flask</li>
-        <li class="skills__list-item btn btn--plain">Pyramid</li>
-        <li class="skills__list-item btn btn--plain">PyQt</li>
-        <li class="skills__list-item btn btn--plain">Node.js</li>
-        <li class="skills__list-item btn btn--plain">SQLAlchemy</li>
-        <li class="skills__list-item btn btn--plain">MySQL</li>
-        <li class="skills__list-item btn btn--plain">PostgreSQL</li>
-        <li class="skills__list-item btn btn--plain">MongoDB</li>
-        <li class="skills__list-item btn btn--plain">Firebase</li>
-        <li class="skills__list-item btn btn--plain">Git</li>
-        <li class="skills__list-item btn btn--plain">Docker</li>
-        <li class="skills__list-item btn btn--plain">Postman</li>
-        <li class="skills__list-item btn btn--plain">WSL</li>
-        <li class="skills__list-item btn btn--plain">Visual Studio</li>
-        <li class="skills__list-item btn btn--plain">Android Studio</li>
-        <li class="skills__list-item btn btn--plain">Xcode</li>
-        <li class="skills__list-item btn btn--plain">AWS</li>
-        <li class="skills__list-item btn btn--plain">GCP</li>
-        <li class="skills__list-item btn btn--plain">CI/CD Pipelines</li>
-        <li class="skills__list-item btn btn--plain">JIRA</li>
-        <li class="skills__list-item btn btn--plain">Figma</li>
-      </ul>
+        <ul class="skills__list">
+          <li class="skills__list-item btn btn--plain">Python</li>
+          <li class="skills__list-item btn btn--plain">JavaScript</li>
+          <li class="skills__list-item btn btn--plain">TypeScript</li>
+          <li class="skills__list-item btn btn--plain">Kotlin</li>
+          <li class="skills__list-item btn btn--plain">C</li>
+          <li class="skills__list-item btn btn--plain">SQL</li>
+          <li class="skills__list-item btn btn--plain">HTML</li>
+          <li class="skills__list-item btn btn--plain">CSS</li>
+          <li class="skills__list-item btn btn--plain">React</li>
+          <li class="skills__list-item btn btn--plain">Redux Toolkit</li>
+          <li class="skills__list-item btn btn--plain">React Native</li>
+          <li class="skills__list-item btn btn--plain">Flask</li>
+          <li class="skills__list-item btn btn--plain">Pyramid</li>
+          <li class="skills__list-item btn btn--plain">PyQt</li>
+          <li class="skills__list-item btn btn--plain">Node.js</li>
+          <li class="skills__list-item btn btn--plain">SQLAlchemy</li>
+          <li class="skills__list-item btn btn--plain">MySQL</li>
+          <li class="skills__list-item btn btn--plain">PostgreSQL</li>
+          <li class="skills__list-item btn btn--plain">MongoDB</li>
+          <li class="skills__list-item btn btn--plain">Firebase</li>
+          <li class="skills__list-item btn btn--plain">Git</li>
+          <li class="skills__list-item btn btn--plain">Docker</li>
+          <li class="skills__list-item btn btn--plain">Postman</li>
+          <li class="skills__list-item btn btn--plain">WSL</li>
+          <li class="skills__list-item btn btn--plain">Visual Studio</li>
+          <li class="skills__list-item btn btn--plain">Android Studio</li>
+          <li class="skills__list-item btn btn--plain">Xcode</li>
+          <li class="skills__list-item btn btn--plain">AWS</li>
+          <li class="skills__list-item btn btn--plain">GCP</li>
+          <li class="skills__list-item btn btn--plain">CI/CD Pipelines</li>
+          <li class="skills__list-item btn btn--plain">JIRA</li>
+          <li class="skills__list-item btn btn--plain">Figma</li>
+        </ul>
+
       </section>
 
-      <!-- Hobbies -->
-      <section class="section hobbies" id="hobbies">
+      <!-- ===== HOBBIES ===== -->
+      <section id="hobbies" class="section hobbies">
         <h2 class="section__title">Hobbies</h2>
         <ul class="hobbies__list">
-          <li class="hobbies__list-item btn btn--plain">Rock Climbing</li>
-          <li class="hobbies__list-item btn btn--plain">Hiking</li>
-          <li class="hobbies__list-item btn btn--plain">Running</li>
-          <li class="hobbies__list-item btn btn--plain">Playing Guitar</li>
+          <li>Rock Climbing</li>
+          <li>Hiking</li>
+          <li>Running</li>
+          <li>Playing Guitar</li>
         </ul>
       </section>
 
-      <!-- Contact -->
-      <section class="section contact center" id="contact">
+      <!-- ===== CONTACT ===== -->
+      <section id="contact" class="section contact center">
         <h2 class="section__title">Contact</h2>
-        <a href="mailto:samer.1.2.3@hotmail.com">
-          <span class="btn btn--outline">Email me</span>
-        </a>
+        <a href="mailto:samer.1.2.3@hotmail.com" class="btn btn--outline">Email me</a>
       </section>
     </main>
 
+    <!-- ===== FOOTER ===== -->
     <footer class="footer">
-      <a
-        href="_"
-        class="link footer__link"
-      >
-        
-      </a>
+      <p>© 2025 Samer Sefrani</p>
     </footer>
 
-    <div class="scroll-container">
-    <div class="scroll-top">
-      <a aria-label="Scroll up" href="#top">
-        <i aria-hidden="true" class="fas fa-arrow-up"></i>
-      </a>
-    </div>
-    </div>
-
-    <script src="./script.js"></script>
+    <script src="script.js"></script>
   </body>
 </html>
